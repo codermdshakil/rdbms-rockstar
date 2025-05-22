@@ -75,9 +75,12 @@ SELECT * from books
     LIMIT 2
 
 
+-- UPDATE Operator
+
+UPDATE books SET price = price*2;
 
 
 
-select * from books;
+select price from books;
 
 
