@@ -25,6 +25,27 @@ SELECT title FROM books
 
 SELECT * from books
     WHERE title = 'Atomic Habits';
-    
+
+
+
+-- scalar function
+-- SELECT title, length(title) as title_length from books;
+-- SELECT upper(title) from books;
+-- SELECT lower(title) from books;
+
+
+-- aggregate
+-- SELECT count(*) from books;
+-- SELECT avg(price) from books;
+-- SELECT round(avg(price)) from books;
+-- SELECT min(price) from books;
+-- SELECT max(price) from books;
+-- SELECT sum(price) from books;
+
+
+
+
 
 select * from books;
+
+
