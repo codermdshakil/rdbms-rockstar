@@ -40,4 +40,7 @@ VALUES
 ('The Subtle Art of Not Giving a F*ck', 'Mark Manson', 2016, 14.50, TRUE, 3);
 
 
+INSERT INTO books (title, author_name, published_year, price, in_stock, publisher_id)
+VALUES 
+('The Subtle Art', 'Mark Manson', 2016, 14.50, TRUE, 3);
  

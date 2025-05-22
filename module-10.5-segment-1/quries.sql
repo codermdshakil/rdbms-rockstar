@@ -80,7 +80,32 @@ SELECT * from books
 UPDATE books SET price = price*2;
 
 
+-- GROUP BY
+SELECT author_name, count(*) from books
+    GROUP BY author_name;
 
-select price from books;
+
+SELECT author_name, count(*) from books
+    GROUP BY author_name
+    HAVING count(*)>1;
+
+-- delete foreign key
+ALTER TABLE books
+
+DROP constraint books_publisher_id_fkey;
+
+--  delete foreign key
+
+ALTER TABLE books
+    ADD constraint books_publisher_id_fkey FOREIGN KEY(publisher_id) REFERENCES publishers(id)
+    ON DELETE CASCADE;
+
+
+DELETE FROM publishers
+    WHERE id = 2;
+
+
+select * from books;
+SELECT * FROM publishers;
 
 
