@@ -66,6 +66,15 @@ SELECT title, price, author_name FROM books
     WHERE author_name in ('James Clear', 'George Orwell');
 
 
+-- Pagination
+-- limit - just limited book 
+-- offset - বাদ দাওয়া
+
+SELECT * from books
+    OFFSET 3 -- offset bad day first items
+    LIMIT 2
+
+
 
 
 
