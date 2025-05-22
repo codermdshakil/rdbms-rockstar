@@ -105,7 +105,28 @@ DELETE FROM publishers
     WHERE id = 2;
 
 
-select * from books;
+-- INNER JOIN
+
+-- must meet condition
+-- null avoid
+
+SELECT b.title, b.author_name , p.name AS publisher from books b INNER JOIN publishers p ON b.publisher_id = p.id; -- using ON add condition
+ 
+
+-- LEFT JOIN
+SELECT b.title, b.author_name , p.name as Publisher from books b LEFT JOIN publishers p ON b.publisher_id = p.id;
+
+-- RIGHT JOIN
+SELECT b.title, b.author_name , p.name as Publisher from books b RIGHT JOIN publishers p ON b.publisher_id = p.id;
+
+
+-- FULL JOIN
+SELECT b.title, b.author_name , p.name as Publisher from books b FULL JOIN publishers p ON b.publisher_id = p.id;
+
+
+
+
+SELECT * from books;
 SELECT * FROM publishers;
 
 

@@ -37,7 +37,7 @@ VALUES
 ('Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', 2011, 18.00, TRUE, 2),
 ('1984', 'George Orwell', 1949, 10.00, FALSE, 1),
 ('Rich Dad Poor Dad', 'Robert T. Kiyosaki', 1997, 13.99, TRUE, 4),
-('The Subtle Art of Not Giving a F*ck', 'Mark Manson', 2016, 14.50, TRUE, 3);
+('The Subtle Art of Not Giving a F*ck', 'Mark Manson', 2016, 14.50, TRUE, NULL);
 
 
 INSERT INTO books (title, author_name, published_year, price, in_stock, publisher_id)
