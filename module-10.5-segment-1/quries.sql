@@ -124,6 +124,15 @@ SELECT b.title, b.author_name , p.name as Publisher from books b RIGHT JOIN publ
 SELECT b.title, b.author_name , p.name as Publisher from books b FULL JOIN publishers p ON b.publisher_id = p.id;
 
 
+SELECT CURRENT_DATE;
+
+SELECT extract(YEAR FROM CURRENT_DATE) AS Year,
+extract(MONTH FROM CURRENT_DATE) AS Month,
+extract(DAY FROM CURRENT_DATE) AS Day;
+
+
+
+
 
 
 SELECT * from books;
