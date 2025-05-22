@@ -15,6 +15,16 @@ ALTER Table books
     Add COLUMN in_stock BOOLEAN DEFAULT true;
 
 
-select * from books;
+
 
 SELECT title, price FROM books;
+
+SELECT title FROM books
+    WHERE price >= 10;
+
+
+SELECT * from books
+    WHERE title = 'Atomic Habits';
+    
+
+select * from books;
