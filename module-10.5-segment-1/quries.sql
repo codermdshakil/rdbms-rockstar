@@ -1,5 +1,6 @@
 -- Active: 1747835496638@@127.0.0.1@5432@b5_psql_cs
 
+-- ALTER
 -- add column
 ALTER Table books   
     ADD COLUMN genre TEXT DEFAULT;
@@ -18,6 +19,8 @@ ALTER Table books
 
 
 SELECT title, price FROM books;
+
+--  WHERE
 
 SELECT title FROM books
     WHERE price >= 10;
@@ -41,6 +44,26 @@ SELECT * from books
 -- SELECT min(price) from books;
 -- SELECT max(price) from books;
 -- SELECT sum(price) from books;
+
+
+-- BETWEEN, LIKE, ILIKE, IN
+
+
+-- BETWEEN
+SELECT * from books
+    WHERE price BETWEEN 15 AND 20;
+
+-- LIKE - case sensative
+SELECT * FROM books
+    WHERE title LIKE '%The%'
+
+-- ILIKE - not case sentative
+SELECT * FROM books
+    WHERE title ILIKE '%the%'
+
+--  IN
+SELECT title, price, author_name FROM books
+    WHERE author_name in ('James Clear', 'George Orwell');
 
 
 
