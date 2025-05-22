@@ -1,0 +1,6 @@
+
+Github Code of Segment-1
+
+https://github.com/Apollo-Level2-Web-Dev/B5_PSQL_Go-To-Queries/tree/segment-1
+
+
