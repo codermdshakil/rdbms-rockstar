@@ -65,16 +65,27 @@ SELECT reverse('Shakil'); -- likahS
 
 
 -- # Summary
--- upper()
--- lower()
--- concat()
--- substring()
--- left()
--- right()
--- length()
--- trim()
--- replace()
--- position()
--- reverse()
+
+-- UPPER() – Converts all letters in a string to uppercase.
+
+-- LOWER() – Converts all letters in a string to lowercase.
+
+-- CONCAT() – Joins multiple strings into one.
+
+-- SUBSTRING() – Extracts a part of a string from a specific position.
+
+-- LEFT() – Returns the first N characters from a string.
+
+-- RIGHT() – Returns the last N characters from a string.
+
+-- LENGTH() – Returns the number of characters in a string.
+
+-- TRIM() – Removes specified characters (default whitespace) from the beginning and/or end of a string.
+
+-- REPLACE() – Replaces all occurrences of a substring with another string.
+
+-- POSITION() – Returns the position of a substring within a string.
+
+-- REVERSE() – Reverses the characters in a string.
 
  
