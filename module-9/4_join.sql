@@ -72,6 +72,14 @@ RIGHT JOIN "user" as u ON u.user_id = p.user_id;
 SELECT * from post;
 SELECT * from "user";
 
+-- FULL JOIN
+SELECT * FROM post as p 
+FULL JOIN "user" as u ON u.user_id = p.user_id;
+
+
+
+
+
 
 -- | Join Type      | What It Returns                                         |
 -- | -------------- | ------------------------------------------------------- |
