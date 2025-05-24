@@ -43,5 +43,38 @@ JOIN "user" AS u ON u.user_id = p.user_id;
 SELECT * FROM post;
 SELECT * FROM "user";
 
+SELECT * FROM post as p
+JOIN "user" as u ON u.user_id = p.user_id;
 
 
+-- SELECT * FROM "user" as u
+-- JOIN post as p ON p.user_id = u.user_id;
+
+-- INSERT INTO post(title, user_id) VALUES('this is test title', NULL);
+
+-- LEFT JOIN
+SELECT * FROM "user" as u
+LEFT JOIN post as p ON p.user_id = u.user_id;
+
+
+SELECT * FROM post as p
+LEFT JOIN "user" as u ON u.user_id = p.user_id;
+
+
+-- RIGHT JOIN
+
+SELECT * FROM "user" as u
+RIGHT JOIN post as p ON p.user_id = u.user_id;
+
+SELECT * FROM post as p
+RIGHT JOIN "user" as u ON u.user_id = p.user_id;
+
+SELECT * from post;
+SELECT * from "user";
+
+
+-- | Join Type      | What It Returns                                         |
+-- | -------------- | ------------------------------------------------------- |
+-- | INNER JOIN     | Matching rows from both tables                          |
+-- | LEFT JOIN      | All rows from the left table + matching rows from right |
+-- | RIGHT JOIN     | All rows from the right table + matching rows from left |
