@@ -83,5 +83,15 @@ INNER JOIN  departments as d ON d.department_id = e.department_id
 GROUP BY d.department_name;
 
 
+-- task - 4
+SELECT department_name, avg(salary) AS avg_salary 
+FROM employees as e
+INNER JOIN  departments as d ON d.department_id = e.department_id
+GROUP BY d.department_name
+ORDER BY avg_salary DESC
+LIMIT 1;
+
+
+
  
  
