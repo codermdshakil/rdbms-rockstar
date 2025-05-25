@@ -70,6 +70,11 @@ INNER JOIN  departments as d ON d.department_id = e.department_id;
 SELECT department_name , avg(salary) FROM employees as e
 INNER JOIN  departments as d ON d.department_id = e.department_id
 GROUP BY d.department_name;
+
+-- another way shortcut
+SELECT department_name , avg(salary) FROM employees
+JOIN departments USING(department_id)
+GROUP BY department_name;
  
 
 
@@ -77,6 +82,11 @@ GROUP BY d.department_name;
 SELECT department_name , count(*) FROM employees as e
 INNER JOIN  departments as d ON d.department_id = e.department_id
 GROUP BY d.department_name;
+
+-- another way
+SELECT department_name , count(*) FROM employees
+JOIN departments USING(department_id)
+GROUP BY department_name;
 
 
 -- task - 4
@@ -87,6 +97,15 @@ GROUP BY d.department_name
 ORDER BY avg_salary DESC
 LIMIT 1;
 
+-- another way 
+SELECT department_name, avg(salary) AS avg_salary 
+FROM employees 
+JOIN departments USING(department_id)
+GROUP BY department_name
+ORDER BY avg_salary DESC
+LIMIT 1;
+
+
 
 
 -- task - 5 
@@ -94,3 +113,9 @@ SELECT EXTRACT(YEAR FROM hire_date) , count(*) AS employee_count
 FROM employees
 GROUP BY EXTRACT(YEAR FROM hire_date)
 ORDER BY EXTRACT(YEAR FROM hire_date) ASC;
+
+
+-- Intructor
+
+SELECT * FROM employees
+JOIN departments USING(department_id);
