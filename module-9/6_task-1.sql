@@ -72,6 +72,16 @@ INNER JOIN  departments as d ON d.department_id = e.department_id
 GROUP BY d.department_name;
  
 
+-- Show both department + employees
+SELECT *  FROM employees as e
+INNER JOIN  departments as d ON d.department_id = e.department_id;
+
+
+-- task - 3
+SELECT department_name , count(*) FROM employees as e
+INNER JOIN  departments as d ON d.department_id = e.department_id
+GROUP BY d.department_name;
+
 
  
  
