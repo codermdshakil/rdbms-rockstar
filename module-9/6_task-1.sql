@@ -64,3 +64,14 @@ INSERT INTO employees (employee_name, department_id, salary, hire_date) VALUES
 
 SELECT employee_name,department_name  FROM employees as e
 INNER JOIN  departments as d ON d.department_id = e.department_id;
+
+
+-- task - 2
+SELECT department_name , avg(salary) FROM employees as e
+INNER JOIN  departments as d ON d.department_id = e.department_id
+GROUP BY d.department_name;
+ 
+
+
+ 
+ 
