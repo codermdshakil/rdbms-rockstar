@@ -72,10 +72,6 @@ INNER JOIN  departments as d ON d.department_id = e.department_id
 GROUP BY d.department_name;
  
 
--- Show both department + employees
-SELECT *  FROM employees as e
-INNER JOIN  departments as d ON d.department_id = e.department_id;
-
 
 -- task - 3
 SELECT department_name , count(*) FROM employees as e
@@ -93,5 +89,8 @@ LIMIT 1;
 
 
 
- 
- 
+-- task - 5 
+SELECT EXTRACT(YEAR FROM hire_date) , count(*) AS employee_count
+FROM employees
+GROUP BY EXTRACT(YEAR FROM hire_date)
+ORDER BY EXTRACT(YEAR FROM hire_date) ASC;
